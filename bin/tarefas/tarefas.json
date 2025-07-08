@@ -1,16 +1,1 @@
-[
-  {
-    "id": 1,
-    "titulo": "Estudar Java",
-    "descricao": "Fazer exercícios do capítulo 3",
-    "concluida": true,
-    "dataCriacao": "2025-07-01"
-  },
-  {
-    "id": 2,
-    "titulo": "Ir ao mercado",
-    "descricao": "Comprar arroz e feijão",
-    "concluida": true,
-    "dataCriacao": "2025-07-02"
-  }
-]
+[{"id":1,"titulo":"Estudar Java","descricao":"Fazer exercícios do capítulo 3","concluida":true,"dataCriacao":"2025-07-01"},{"id":2,"titulo":"Ir ao mercado","descricao":"Comprar arroz e feijão","concluida":true,"dataCriacao":"2025-07-02"}]

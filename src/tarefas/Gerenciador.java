@@ -26,10 +26,15 @@ public class Gerenciador {
             System.out.println("Nenhuma tarefa encontrada.");
             return tarefas;
         }
+        
         tarefas.stream()
                 .filter(tarefa -> !tarefa.getConcluida())
                 .forEach(System.out::println);
 
+        if (tarefas.stream().noneMatch(tarefa -> !tarefa.getConcluida())) {
+            System.out.println("Nenhuma tarefa pendente encontrada.");
+        }
+        
         return tarefas;
     }
 
