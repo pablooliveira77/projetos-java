@@ -22,6 +22,7 @@ public class Main {
         if (usuarioLogado == null) {
             System.out.println("Usuário não encontrado com o CPF: " + cpf);
             System.out.println("Encerrando o programa.");
+            scanner.close();
             return;
         } else {
             System.out.println("Usuário logado: " + usuarioLogado);
