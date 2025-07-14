@@ -8,6 +8,7 @@ public class App {
         List<String> listaOrdenada = new ArrayList<>();
         listaOrdenada.add("Agenda");
         listaOrdenada.add("Gerenciador de Tarefas");
+        listaOrdenada.add("Banco");
 
         for (int i = 0; i < listaOrdenada.size(); i++) {
             System.out.println((i + 1) + ". " + listaOrdenada.get(i));
