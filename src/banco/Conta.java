@@ -13,18 +13,22 @@ public class Conta {
         return saldo;
     }
 
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+
     public void sacar(double saque) {
         if (saque > this.saldo) {
             System.out.println("Saque maior que o saldo disponível.");
         } else {
             this.saldo -= saque;
-            System.out.println("Saque realizado com sucesso. Saldo atual: " + this.saldo);
+            System.out.println("Saque realizado com sucesso.");
         }
     }
 
     public void depositar(double saldo) {
         this.saldo += saldo;
-        System.out.println("Depósito realizado com sucesso. Saldo atual: " + this.saldo);
+        System.out.println("Depósito realizado com sucesso.");
     }
 
     public void transferir(Conta contaDestino, double valor) {
@@ -33,12 +37,12 @@ public class Conta {
         } else {
             contaDestino.depositar(valor);
             this.saldo -= valor;
-            System.out.println("Transferência realizada com sucesso. Saldo atual: " + this.saldo);
+            System.out.println("Transferência realizada com sucesso.");
         }
     }
 
     @Override
     public String toString() {
-        return "[numeroConta=" + numeroConta + ", saldo=" + saldo + "]";
+        return "[numeroConta=" + getNumeroConta() + ", saldo=" + getSaldo() + "]";
     }
 }
