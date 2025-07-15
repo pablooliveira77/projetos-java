@@ -9,6 +9,7 @@ public class App {
         listaOrdenada.add("Agenda");
         listaOrdenada.add("Gerenciador de Tarefas");
         listaOrdenada.add("Banco");
+        listaOrdenada.add("Controle Financeiro");
 
         for (int i = 0; i < listaOrdenada.size(); i++) {
             System.out.println((i + 1) + ". " + listaOrdenada.get(i));
